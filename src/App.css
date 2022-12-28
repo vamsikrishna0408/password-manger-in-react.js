@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  padding: 40px;
+}
+.app-logo {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.password-manger-container {
+  background-color: #5763a5;
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .password-manger-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.image {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  #main-image {
+    content: url('https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png');
+  }
+  .image {
+    width: 30%;
+    order: 1;
+  }
+}
+.form {
+  background-color: #454f84;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+.form-heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .form-heading {
+    font-size: 32px;
+  }
+}
+.icon-input-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.icon-button {
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  border: 1px solid #94a3b8;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.input {
+  background-color: #ffffff;
+  color: #454f84;
+  border: 1px solid #94a3b8;
+  outline: none;
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    width: 350px;
+    height: 50px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.addBtn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-button {
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+}
+.passwords-view-container {
+  background-color: #5763a5;
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  padding: 30px;
+}
+.password-text-count-container {
+  display: flex;
+  align-items: center;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.password-count {
+  background-color: transparent;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #f8fafc;
+  margin-left: 10px;
+}
+.line {
+  border-bottom: 1px solid #7683cb;
+}
+.password-count-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+.search-icon-button {
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  border: 1px solid #94a3b8;
+  height: 30px;
+}
+.search-input {
+  background-color: #ffffff;
+  color: #454f84;
+  border: 1px solid #94a3b8;
+  outline: none;
+  width: 200px;
+  height: 30px;
+}
+.password-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .password-list-container {
+    flex-direction: row;
+  }
+}
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.check-box {
+  width: 20px;
+  height: 20px;
+}
+
+.label-text {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+.no-passwords-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-passwords-img {
+  width: 80%;
+}
+.no-passwords-text {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .no-passwords-text {
+    font-size: 28px;
+  }
+}
